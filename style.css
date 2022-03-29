@@ -9,14 +9,17 @@ html {
     box-sizing: border-box;
     margin: 0px;
     border: 1px solid black;
-    --lavender-web: #e5e1eeff;
-    --light-cyan: #dffdffff;
-    --pale-cerulean: #90bedeff;
+    --peach-crayola: #f7c59fff;
+    --space-cadet: #2a324bff;
+    --rhythm: #767b91ff;
+    --light-periwinkle: #c7ccdbff;
+    --alice-blue: #e1e5eeff;
     font-family: Charlie-Serif;
     font-size: 16px;
 }
 
 .container {
+    background-color: var(--pale-cerulean);
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
