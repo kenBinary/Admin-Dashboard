@@ -1,0 +1,5 @@
+<palette>
+  <color name="Lavender Web" hex="e5e1ee" r="229" g="225" b="238" />
+  <color name="Light Cyan" hex="dffdff" r="223" g="253" b="255" />
+  <color name="Pale Cerulean" hex="90bede" r="144" g="190" b="222" />
+</palette>
