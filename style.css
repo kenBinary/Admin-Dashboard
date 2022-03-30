@@ -12,15 +12,12 @@ body {
     --peach-crayola: #f7c59fff;
     --peach-crayola-filter: invert(81%) sepia(21%) saturate(810%) hue-rotate(328deg) brightness(103%) contrast(94%);
     --space-cadet: #2a324bff;
+    --space-cadet-filter: invert(16%) sepia(8%) saturate(2923%) hue-rotate(188deg) brightness(94%) contrast(88%);
     --rhythm: #767b91ff;
     --light-periwinkle: #c7ccdbff;
     --alice-blue: #e1e5eeff;
     font-family: Charlie-Serif;
     font-size: 16px;
-}
-
-* {
-    /* border: 1px solid green; */
 }
 
 .container {
@@ -46,6 +43,7 @@ body {
 }
 
 .header {
+    color: var(--space-cadet);
     grid-column-start: 2;
     grid-column-end: -1;
     background-color: var(--alice-blue);
@@ -149,6 +147,10 @@ body {
     grid-template-columns: 1.90fr 1.10fr;
 }
 
+.bottom-header> :nth-child(2) {
+    align-self: center;
+}
+
 .search-container {
     display: flex;
     gap: 10px;
@@ -156,9 +158,14 @@ body {
     margin-left: 2.5rem;
 }
 
+.search-container> :nth-child(1) {
+    filter: var(--space-cadet-filter);
+}
+
 .search-container input {
     flex: 1;
     border-radius: 20px;
+    border-color: var(--space-cadet);
 }
 
 .profile-container {
@@ -171,4 +178,54 @@ body {
 
 .profile-container h3 {
     margin: 0px;
+}
+
+.profile-container> :nth-child(1) {
+    filter: var(--space-cadet-filter);
+}
+
+.profile-container> :nth-child(2) {
+    height: 3rem;
+}
+
+.bottom-profile {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 0.30fr 1fr;
+    grid-template-rows: 0.50fr 1fr;
+}
+
+.bottom-profile> :nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    align-self: center;
+    justify-self: center;
+    height: 4rem;
+}
+
+.bottom-profile> :nth-child(2) {
+    margin: 0px;
+    align-self: center;
+}
+
+.bottom-profile> :nth-child(3) {
+    margin: 0px;
+}
+
+.bottom-operations {
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.bottom-operations button {
+    width: 5rem;
+    height: 2.3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--space-cadet);
+    font-size: 1rem;
+    color: var(--peach-crayola);
 }
